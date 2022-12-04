@@ -1,14 +1,12 @@
 package men83_lab10;
 
-import java.util.Arrays;
-
 public class recursion {
 
 	public static void main(String[] args) {
 		System.out.println(sumOfDigits(-67));
 		int[]list= {1,4,8,3,7};
 		printArrayElements(list,list.length-1);
-		printCombos(list,"",0,3);
+		//printCombos(list,"",0,3);
 	}
 	public static void printArrayElements(int[] a, int index) {
 		if(index!=-1) {
@@ -27,7 +25,7 @@ public class recursion {
 		return sum;
 	}
 	
-	public static void printCombos(int[] a, String out, int startIndex, int k) {
+	/*public static void printCombos(int[] a, String out, int startIndex, int k) {
 		
 		String StringN = Arrays.toString(a);
 		String StringList[]= StringN.substring(1,StringN.length()-2).split(", ");
@@ -37,5 +35,5 @@ public class recursion {
 			out+="\n";
 			System.out.print(out);
 
-	}
+	}*/
 }		
