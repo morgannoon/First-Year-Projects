@@ -12,7 +12,10 @@ public class MenuManager {
 	private ArrayList<Side> sides;
 	private ArrayList<Salad> salads;
 	private ArrayList<Dessert> desserts;
-
+	/**
+	 * Class MenuManager
+	 * @param dishesFile String
+ 	*/
 	public MenuManager(String dishesFile) {
 		FileManager manage = new FileManager();
 		ArrayList<MenuItem> array = new ArrayList<MenuItem>();
@@ -40,7 +43,11 @@ public class MenuManager {
 		}
 
 	}
-
+	/**
+	 * Method randmMenu
+	 * @param name String
+	 * @return createMenu Menu
+	 */
 	public Menu randomMenu(String name) {
 		Random r = new Random();
 		Entree rEntree =  entrees.get(r.nextInt(entrees.size() - 1));
