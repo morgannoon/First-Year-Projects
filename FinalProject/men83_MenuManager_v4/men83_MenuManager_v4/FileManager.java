@@ -18,7 +18,7 @@ public class FileManager {
 	 * @param fileName String
 	 * @return disList ArrayList
 	 */
-	public ArrayList<MenuItem> readItems(String fileName){
+	public static ArrayList<MenuItem> readItems(String fileName){
 		ArrayList<MenuItem> dishList = new ArrayList<MenuItem>();
 		String inputPath = fileName;
 		try {
